@@ -307,7 +307,7 @@ void data_out(unsigned char d)
 
 void dispFill()
 {
-	unsigned int i, j;
+	unsigned int i;
         comm_out(0x98);            //graphics ON, text OFF
         data_out(0x00);            
         data_out(0x40);
@@ -323,7 +323,7 @@ void dispFill()
 
 void dispClear()
 {
-  unsigned int i, j;
+  unsigned int i;
         comm_out(0x98);            //graphics ON, text OFF
         data_out(0x00);            
         data_out(0x40);
@@ -339,7 +339,7 @@ void dispClear()
 
 void dispImage(unsigned char *lcd_string)
 {
-  unsigned int i, j;
+  unsigned int i;
         comm_out(0x98);            //graphics ON, text OFF
         data_out(0x00);            
         data_out(0x40);
